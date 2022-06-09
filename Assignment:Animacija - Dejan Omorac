@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment:Animacija - Dejan Omorac</title>
+    <style>
+
+        .Canvas {
+            margin: auto;
+        height:500px;
+        width: 600px;
+        border: 3px solid #b97aff;
+        background-color:#050210;
+        }
+
+
+        .Ring {
+            height:350px;
+            width: 350px;
+            background: radial-gradient(circle, #050210 59% , transparent 60%, transparent 70%, #050210 71%);
+        }
+
+
+
+    #Gradient {
+        height:350px;
+        width: 350px;
+
+        /* 1) Linearni gradijent */
+        background: linear-gradient( #fb5dad 0% , #55fb9f 50% , #b97aff 100%);
+        
+
+        /* 3) CSS animacija */
+        animation: rotation;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite ;
+
+        align-content: center;
+
+        margin-top: 75px;
+        margin-left: 125px;
+
+    }
+
+    
+    @keyframes rotation {
+        /* 4) 2D CSS transformacija */
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(359deg);
+        }
+    }
+
+    #Scaling_Circle1 {
+
+        width: 350px;
+        height: 350px;
+
+        /* 3) CSS animacija */
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite ;
+        animation-timing-function: linear;
+        
+
+
+        /* background: radial-gradient(circle, rgba(27, 23, 61, 0.568) 38% , transparent 40% ); */
+        background: radial-gradient(circle, rgba(42, 37, 92, 0.5) 5% , transparent 6% );
+
+    }
+
+    #Scaling_Circle2 {
+
+        margin-top: -350px;
+
+        width: 350px;
+        height: 350px;
+
+        /* 3) CSS animacija */
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        
+
+
+        background: radial-gradient(circle, rgba(42, 37, 92, 0.5) 5% , transparent 6% );
+
+    }
+
+    /* 3) CSS animacija */
+    @keyframes pulse {
+
+        /* 4) 2D CSS transformacija */
+        0% {
+            transform: scale(0%);
+            opacity: 100%;
+        }
+        
+        60% {
+            opacity: 100%;
+        }
+        100% {
+            transform: scale(1200%);
+            opacity: 0%;
+        }
+    }
+
+    #Glow {
+        margin-top: -350px;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+            box-shadow:
+            0 100px 70px -100px #b97aff,
+            0 -100px 70px -100px #fb5dad,
+            -100px 0 70px -100px #55fb9f,
+            100px 0 70px -100px #55fb9f,
+            0 0 50px 40px rgb(82, 82, 82);
+
+            /* 2) Filter */
+            filter: opacity(60%);
+            
+
+    }
+
+
+    /* Zaista nisam imao ideju kako da upotrebim pseudoelemente na ovom primeru animacije pa sam samo dodao tekst koji menja pozadinsku boju i boju fonta prilikom selekcije
+
+    5) Pseudoelementi */
+    p {
+        margin: 15px auto;
+        border: #b97aff 3px solid;
+        width: 600px;
+        text-align: center;
+    }
+    p::selection {
+             color: #b97aff;
+             background-color: rgb(0, 0, 0);
+         }
+         
+    </style>
+
+</head>
+<body>
+        <div class="Canvas">
+            <div id="Gradient">
+                <div class="Ring">
+                    <div id="Scaling_Circle1"></div>
+                    <div id="Scaling_Circle2"></div>
+                    <div id="Glow"></div>
+                </div>
+             </div>
+            </div>
+        </div>
+        <p>SELECT ME!</p>
+</body>
+</html>
