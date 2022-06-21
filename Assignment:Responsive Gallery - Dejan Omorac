@@ -103,47 +103,47 @@
              </div>
         
             <div class="box2">
-                <img id="image" src="images/placeholder-image.png" alt="image_box2" >
+                <img id="image" src="placeholder-image.png" alt="image_box2" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box3">
-                <img id="image" src="images/placeholder-image.png" alt="image_box3" >
+                <img id="image" src="placeholder-image.png" alt="image_box3" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box4">
-                <img id="image" src="images/placeholder-image.png" alt="image_box4" >
+                <img id="image" src="placeholder-image.png" alt="image_box4" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box5">
-                <img id="image" src="images/placeholder-image.png" alt="image_box5" >
+                <img id="image" src="placeholder-image.png" alt="image_box5" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box6">
-                <img id="image" src="images/placeholder-image.png" alt="image_box6" >
+                <img id="image" src="placeholder-image.png" alt="image_box6" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box7">
-                <img id="image" src="images/placeholder-image.png" alt="image_box7" >
+                <img id="image" src="placeholder-image.png" alt="image_box7" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box8">
-                <img id="image" src="images/placeholder-image.png" alt="image_box8" >
+                <img id="image" src="placeholder-image.png" alt="image_box8" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box9">
-                <img id="image" src="images/placeholder-image.png" alt="image_box9" >
+                <img id="image" src="placeholder-image.png" alt="image_box9" >
                 <p id="title"> <br> Image Title</p>
             </div>
     
             <div class="box10">
-                <img id="image" src="images/placeholder-image.png" alt="image_box10" >
+                <img id="image" src="placeholder-image.png" alt="image_box10" >
                 <p id="title"> <br> Image Title</p>
             </div>
         </div>
