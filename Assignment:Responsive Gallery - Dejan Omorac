@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment: Responsive Gallery - Dejan Omorac</title>
+
+    <style>
+        body {
+            background-color: rgb(46, 42, 42);
+        }
+
+        h1, #text {
+            color: beige;
+        }
+
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center; 
+            /* border: 5px solid; */
+        }
+
+        div[class*="box"] {
+            
+            display: inline-block;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            height: 260px;
+            width: 250px;
+            background: linear-gradient(rgb(35, 114, 167) 0%, rgb(35, 114, 167) 80%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 100%);
+            border-radius: 50px;
+            
+    
+        }
+
+        #image {
+         transform: translate(0px , 100px) scale(700%);
+            
+        }
+
+        
+
+        #title {
+            text-align: center;
+            margin-top: 180px;
+        }
+
+        
+        @media screen and (max-width: 1920px) {
+        div[class*="box"] {
+        width: 15%;
+        }
+        }
+
+
+        @media screen and (max-width: 1200px) {
+        div[class*="box"] {
+        width: 24%;
+        }
+        }
+
+
+        @media screen and (max-width: 600px) {
+        div[class*="box"] {
+        width: 80%;
+        }
+        }
+
+
+        @media screen and (max-width: 1920px) {
+        #image {
+        width: 20%;
+        }
+        }
+
+
+        @media screen and (max-width: 1200px) {
+        #image {
+        width: 15%;
+        }
+        }
+
+
+        @media screen and (max-width: 600px) {
+            #image {
+        width: 10%;
+        }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Image Gallery Title</h1>
+    
+        <div class="flex">
+    
+                    
+             <div class="box1">
+                <img id="image" src="images/placeholder-image.png" alt="image_box1" >
+                <p id="title"> <br> Image Title</p>
+             </div>
+        
+            <div class="box2">
+                <img id="image" src="images/placeholder-image.png" alt="image_box2" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box3">
+                <img id="image" src="images/placeholder-image.png" alt="image_box3" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box4">
+                <img id="image" src="images/placeholder-image.png" alt="image_box4" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box5">
+                <img id="image" src="images/placeholder-image.png" alt="image_box5" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box6">
+                <img id="image" src="images/placeholder-image.png" alt="image_box6" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box7">
+                <img id="image" src="images/placeholder-image.png" alt="image_box7" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box8">
+                <img id="image" src="images/placeholder-image.png" alt="image_box8" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box9">
+                <img id="image" src="images/placeholder-image.png" alt="image_box9" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+    
+            <div class="box10">
+                <img id="image" src="images/placeholder-image.png" alt="image_box10" >
+                <p id="title"> <br> Image Title</p>
+            </div>
+        </div>
+        
+
+    
+    
+
+    
+
+    <br><br><br>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eligendi, illo vitae rerum architecto ea molestias inventore mollitia laboriosam dicta veritatis illum nesciunt soluta!
+
+    <br>
+    <br>
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam aspernatur fugiat deleniti quam modi distinctio ut vel.
+
+    <br>
+    
+
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet, sapiente aperiam ut non delectus ullam impedit tempore. Blanditiis nihil accusantium a, cumque placeat voluptatibus deleniti similique impedit tenetur et dicta aperiam nobis?
+    </p>
+</body>
+</html>
